@@ -38,7 +38,8 @@
                 	{!! Form::open() !!}
                     	{!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'Username']) !!}
 						{!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password']) !!}<br>
-						{!! Form::submit('Login', ['class' => 'btn btn-primary']) !!}
+						{{-- {!! Form::submit('Login', ['class' => 'btn btn-primary']) !!} temporary disabled --}}
+            <a href="{{ action('DashController@dashboard') }}" class="btn btn-primary">Login</a> 
 						<a href="{{ action('DashController@pincode') }}" class="btn btn-primary">Register</a>
                 	{!! Form::close() !!}
             	</div>

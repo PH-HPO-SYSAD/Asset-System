@@ -23,4 +23,8 @@ class DashController extends Controller
    public function register() {
    		return view('user.register');
    }
+
+   public function dashboard() {
+      return view('dashboard.index');
+   }
 }
