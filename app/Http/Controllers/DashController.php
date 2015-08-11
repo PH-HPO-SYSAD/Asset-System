@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+// GET methods are implemented in this Controller
 class DashController extends Controller
 {
    public function index() {

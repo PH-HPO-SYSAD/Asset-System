@@ -9,7 +9,8 @@ use Input;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+
 class UserController extends Controller
 {
-   return view('index');
+  //  POST methods will be implemented in this controller
 }
