@@ -1,7 +1,7 @@
 @extends('layout.master')
 {{-- Navigation --}}
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
         <span class="sr-only">Toggle navigation</span>
@@ -30,18 +30,10 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search Asset">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul>
     </div>
   </div>
 </nav>
+
 {{-- end navigation --}}
 @section('contents')
   <div class="dash-jumbo">
@@ -126,4 +118,5 @@
   </tbody>
 </table> 
   </div>
+
 @endsection

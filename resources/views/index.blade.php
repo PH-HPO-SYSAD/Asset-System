@@ -45,7 +45,7 @@
                     {{-- temporary disabled --}}
                     <!-- {!! Form::submit('login', ['class' => 'btn btn-primary'])  !!} -->
                     <a href="{{ action('DashController@dashboard') }}" class="btn btn-primary">Login</a>
-                    <a href="{{ action('DashController@register') }}" class="btn btn-primary">Register</a>
+                    <a href="{{ action('DashController@pincode') }}" class="btn btn-primary">Register</a>
                   </div>
                 {!! Form::close() !!}
               </div>

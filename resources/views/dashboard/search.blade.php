@@ -30,7 +30,6 @@
           </ul>
         </li>
       </ul>
-      
     </div>
   </div>
 </nav>
@@ -38,7 +37,7 @@
 @section('contents')
   <div class="dash-jumbo">
     <div class="jumbotron" align="center">
-      <h2>Adding new assets</h2>
+      <h2>Search result is posted blow</h2>
       <p>To help yourself click learn more to know more.</p>
       <a href="#" class="btn btn-primary">Learn More</a>
     </div>

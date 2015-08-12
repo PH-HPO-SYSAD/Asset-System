@@ -35,4 +35,8 @@ class DashController extends Controller
    public function UpdateAsset() {
          return view('dashboard.update');
    }
+
+   public function SearchAsset() {
+         return view('dashboard.search');
+   }
 }
