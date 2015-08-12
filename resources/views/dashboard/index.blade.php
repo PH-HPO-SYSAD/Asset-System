@@ -46,7 +46,8 @@
 
   
   <!-- Query Asset here -->
-  <div class="newasset">  
+  <h3>Defective Assets</h3>
+  <div class="Deffective">  
       <table class="table table-striped table-hover ">
   <thead>
     <tr>
@@ -54,65 +55,197 @@
       <th>Asset</th>
       <th>Inventory Tag</th>
       <th>Status</th>
-      <th>Assigned Status</th>
       <th>Warranty Status</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="danger">
       <td>1</td>
       <td>Mouse Genius</td>
       <td>MOUSE-GENIUS-0052</td>
-      <td>Working</td>
-      <td>Computer-010</td>
+      <td>Defective</td>
       <td>Under Warranty</td>
     </tr>
-    <tr>
+    <tr class="danger">
       <td>2</td>
       <td>AOC</td>
       <td>COMP-AOC-0013</td>
-      <td>Working</td>
-      <td>Vacant</td>
+      <td>Defective</td>
       <td>Under Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="danger">
       <td>3</td>
       <td>Genius Keyboard</td>
       <td>KYBRD-GENIUS-0025</td>
       <td>Defective</td>
-      <td>Pull-Out for repair</td>
       <td>No Warranty</td>
     </tr>
-    <tr class="success">
+    <tr class="danger">
       <td>4</td>
       <td>Keyboard Genius</td>
       <td>MOUSE-GENIUS-0153</td>
-      <td>Working</td>
-      <td>Computer-060</td>
+      <td>Defective</td>
       <td>Under Warranty</td>
     </tr>
     <tr class="danger">
       <td>5</td>
       <td>Samsung</td>
       <td>COMP-SAMSUNG-0055</td>
-      <td>Working</td>
-      <td>Computer-099</td>
+      <td>Defective</td>
       <td>Under Warranty</td>
+    </tr>
+    <tr class="danger">
+      <td>6</td>
+      <td>View Sonic</td>
+      <td>COMP-VIEWSONIC-0442</td>
+      <td>Defective</td>
+      <td>No Warranty</td>
+    </tr>
+    <tr class="danger">
+      <td>7</td>
+      <td>Acer</td>
+      <td>COMP-ACER-0022</td>
+      <td>Defective</td>
+      <td>Under Warranty</td>
+    </tr>
+  </tbody>
+</table> 
+  </div>
+
+  <h3>Pulled-out Assets</h3>
+  <div class="pullout">  
+      <table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Asset</th>
+      <th>Inventory Tag</th>
+      <th>Status</th>
+      <th>Warranty Status</th>
+      <th>Pulled out for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="warning">
+      <td>1</td>
+      <td>Mouse Genius</td>
+      <td>MOUSE-GENIUS-0052</td>
+      <td>Defective</td>
+      <td>Under Warranty</td>
+      <td>Repair</td>
+    </tr>
+    <tr class="warning">
+      <td>2</td>
+      <td>AOC</td>
+      <td>COMP-AOC-0013</td>
+      <td>Defective</td>
+      <td>Under Warranty</td>
+      <td>Repair</td>
+    </tr>
+    <tr class="warning">
+      <td>3</td>
+      <td>Genius Keyboard</td>
+      <td>KYBRD-GENIUS-0025</td>
+      <td>Defective</td>
+      <td>No Warranty</td>
+      <td>Repair</td>
+    </tr>
+    <tr class="warning">
+      <td>4</td>
+      <td>Keyboard Genius</td>
+      <td>MOUSE-GENIUS-0153</td>
+      <td>Defective</td>
+      <td>Under Warranty</td>
+      <td>Repair</td>
+    </tr>
+    <tr class="warning">
+      <td>5</td>
+      <td>Samsung</td>
+      <td>COMP-SAMSUNG-0055</td>
+      <td>Defective</td>
+      <td>Under Warranty</td>
+      <td>Repair</td>
     </tr>
     <tr class="warning">
       <td>6</td>
       <td>View Sonic</td>
       <td>COMP-VIEWSONIC-0442</td>
+      <td>Defective</td>
+      <td>No Warranty</td>
+      <td>Repair</td>
+    </tr>
+    <tr class="warning">
+      <td>7</td>
+      <td>Acer</td>
+      <td>COMP-ACER-0022</td>
+      <td>Defective</td>
+      <td>Under Warranty</td>
+      <td>Repair</td>
+    </tr>
+  </tbody>
+</table> 
+  </div>
+
+  <h3>Vacant Assets</h3>
+  <div class="Deffective">  
+      <table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Asset</th>
+      <th>Inventory Tag</th>
+      <th>Status</th>
+      <th>Warranty Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>1</td>
+      <td>Mouse Genius</td>
+      <td>MOUSE-GENIUS-0052</td>
       <td>Working</td>
-      <td>Vacant</td>
+      <td>Under Warranty</td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>AOC</td>
+      <td>COMP-AOC-0013</td>
+      <td>Working</td>
+      <td>Under Warranty</td>
+    </tr>
+    <tr class="info">
+      <td>3</td>
+      <td>Genius Keyboard</td>
+      <td>KYBRD-GENIUS-0025</td>
+      <td>Working</td>
       <td>No Warranty</td>
     </tr>
-    <tr class="active">
+    <tr class="info">
+      <td>4</td>
+      <td>Keyboard Genius</td>
+      <td>MOUSE-GENIUS-0153</td>
+      <td>Working</td>
+      <td>Under Warranty</td>
+    </tr>
+    <tr class="info">
+      <td>5</td>
+      <td>Samsung</td>
+      <td>COMP-SAMSUNG-0055</td>
+      <td>Working</td>
+      <td>Under Warranty</td>
+    </tr>
+    <tr class="info">
+      <td>6</td>
+      <td>View Sonic</td>
+      <td>COMP-VIEWSONIC-0442</td>
+      <td>Working</td>
+      <td>No Warranty</td>
+    </tr>
+    <tr class="info">
       <td>7</td>
       <td>Acer</td>
       <td>COMP-ACER-0022</td>
       <td>Working</td>
-      <td>Computer-040</td>
       <td>Under Warranty</td>
     </tr>
   </tbody>
