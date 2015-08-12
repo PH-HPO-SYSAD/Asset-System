@@ -1,7 +1,7 @@
 @extends('layout.master')
 {{-- Navigation --}}
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
         <span class="sr-only">Toggle navigation</span>
@@ -40,11 +40,26 @@
     <div class="jumbotron" align="center">
       <h2>Here is where you can update your assets</h2>
       <p>To help yourself click learn more to know more.</p>
-      <a href="#" class="btn btn-primary">Learn More</a>
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#learn">Learn More</a>
     </div>
   </div>
 
-  
+  <div class="modal fade" id="learn">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Update Assets</h4>
+      </div>
+      <div class="modal-body">
+        <p>This is the contents of additional information about Updating Assets</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Query Asset here -->
 
 @endsection
