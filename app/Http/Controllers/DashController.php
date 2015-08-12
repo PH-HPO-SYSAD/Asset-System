@@ -25,6 +25,14 @@ class DashController extends Controller
    }
 
    public function dashboard() {
-      return view('dashboard.index');
+         return view('dashboard.index');
+   }
+
+   public function AddAsset() {
+         return view('dashboard.add');
+   }
+
+   public function UpdateAsset() {
+         return view('dashboard.update');
    }
 }
