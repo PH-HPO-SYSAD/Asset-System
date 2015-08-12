@@ -72,6 +72,7 @@
           <option>Network Router</option>
           <option>Printer</option>
           <option>Software</option>
+          <option>Monitor</option>
           <option>Headset</option>
           <option>Keyboard</option>
           <option>Mouse</option>
@@ -118,8 +119,8 @@
     </div>
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
-        <a href="{{ action('DashController@dashboard') }}" class="btn btn-default">Home</a>
-        <a href="{{ action('DashController@dashboard') }}" class="btn btn-danger">Submit</a>
+        <a href="{{ action('DashController@dashboard') }}" class="btn btn-info">Home</a>
+        <a href="{{ action('DashController@dashboard') }}" class="btn btn-primary">Submit</a>
         <!-- <button type="reset" class="btn btn-default">Cancel</button>
         <button type="submit" class="btn btn-primary">Submit</button> -->
       </div>
