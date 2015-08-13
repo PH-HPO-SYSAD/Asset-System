@@ -3,7 +3,7 @@
 @section('contents')
 <div class="dash-jumbo">
     <div class="jumbotron" align="center">
-        <h2>Welcome (USER) to HPO Asset Inventory</h2>
+        <h2>Welcome {{ auth()->user()->name }} to HPO Asset Inventory</h2>
         <p>To help yourself click learn more to know more.</p>
         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#learn">Learn More</a>
     </div>
@@ -34,8 +34,6 @@
         </tbody>
     </table> 
 </div>
-
-
 
 <div class="modal fade" id="learn">
     <div class="modal-dialog">

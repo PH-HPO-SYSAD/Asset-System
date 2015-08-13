@@ -9,11 +9,13 @@
         <div class="account-wall">
             <img class="profile-img" src="/img/logo.png"
             alt="">
-
+            @if(Session::has('message'))
+                <p class="alert alert-info">{{ Session::get('message') }}</p>
+            @endif
             <form class="form-signin" action="/auth/login" method="POST">
                 {!! csrf_field() !!}
-                <input type="text" class="form-control" placeholder="Username" name="username" value="{{ old('username') }}"/>
-                <input type="password" class="form-control" placeholder="Password" name="password"/>
+                <input type="text" class="form-control" placeholder="Username" name="username" required/>
+                <input type="password" class="form-control" placeholder="Password" name="password" required/>
                 <label class="checkbox pull-left">
                     <input type="checkbox" name="remember">
                     Remember me
