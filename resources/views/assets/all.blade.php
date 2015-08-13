@@ -5,36 +5,47 @@
 @stop
 
 @section('contents')
+<div class="col-md-3">
 	
-<table class="table" id="assetTable">
-    <thead>
-        <tr>
-            <th>Tag Number</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Status</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-    	@foreach($assets as $asset)
-        <tr>
-			<td>{{ $asset->tag_number }}</td> 
-			<td>{{ $asset->description }}</td> 
-			<td>{{ $asset->category->name }}</td> 
-			<td>{{ $asset->brand->name }}</td> 
-			<td>{{ $asset->model }}</td> 
-			<td>{{ $asset->status }}</td> 
-			<td>
-				<button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i> View</button>
-				<button class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-pencil"></i> Update</button>
-       		</td>
-        </tr>
-        @endforeach
-    </tbody>
-</table>	
+</div>	
+<div class="col-md-9">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">List of assets</h3>
+		</div>
+		<div class="panel-body">
+			<table class="table" id="assetTable">
+			    <thead>
+			        <tr>
+			            <th>Tag Number</th>
+			            <th>Description</th>
+			            <th>Category</th>
+			            <th>Brand</th>
+			            <th>Model</th>
+			            <th>Status</th>
+			            <th>Action</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			    	@foreach($assets as $asset)
+			        <tr>
+						<td>{{ $asset->tag_number }}</td> 
+						<td>{{ $asset->description }}</td> 
+						<td>{{ $asset->category->name }}</td> 
+						<td>{{ $asset->brand->name }}</td> 
+						<td>{{ $asset->model }}</td> 
+						<td>{{ $asset->status }}</td> 
+						<td>
+							<button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i> View</button>
+							<button class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-pencil"></i> Update</button>
+			       		</td>
+			        </tr>
+			        @endforeach
+			    </tbody>
+			</table>
+		</div>
+	</div>
+</div>
 @stop
 
 @section('script')
