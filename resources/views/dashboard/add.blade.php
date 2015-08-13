@@ -19,7 +19,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Asset <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class=""><a href="{{ action('DashController@AddAsset') }}">Add Asset</a></li>
-            <li><a href="{{ action('DashController@SearchAsset') }}">Search</a></li>
+            <li><a href="{{ action('DashController@SearchAsset') }}">Search and Update</a></li>
           </ul>
         </li>
         <li class="Logout">

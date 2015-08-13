@@ -13,13 +13,13 @@
     </div>
   
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Asset <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{ action('DashController@AddAsset') }}">Add Asset</a></li>
-            <li><a href="{{ action('DashController@SearchAsset') }}">Search</a></li>
+            <li><a href="{{ action('DashController@SearchAsset') }}">Search and Update</a></li>
           </ul>
         </li>
         <li class="Logout">

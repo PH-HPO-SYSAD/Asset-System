@@ -19,7 +19,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Asset <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class=""><a href="{{ action('DashController@AddAsset') }}">Add Asset</a></li>
-            <li><a href="{{ action('DashController@SearchAsset') }}">Search</a></li>
+            <li><a href="{{ action('DashController@SearchAsset') }}">Search and Update</a></li>
           </ul>
         </li>
         <li class="Logout">
@@ -43,6 +43,54 @@
     </div>
   </div>
 
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <input type="search" id="search" value="" class="form-control" placeholder="Search using Fuzzy searching">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>First column</th>
+                        <th>Second column</th>
+                        <th>Third column</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introducing</td>
+                        <td>jQuery</td>
+                        <td>Searchable</td>
+                        <td><a href="#" class="btn btn-primary">update</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                        <td><a href="#" class="btn btn-primary">update</a></td>
+                    </tr>
+                    <tr>
+                        <td>Some</td>
+                        <td>More</td>
+                        <td>Data</td>
+                        <td><a href="#" class="btn btn-primary">update</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
+    </div>
+
+
+
+  </script>
+
+
+  
+
   <div class="modal fade" id="learn">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -62,3 +110,29 @@
   <!-- Query Asset here -->
 
 @endsection
+@section('script')
+  <script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+  <script type="text/javascript">
+
+        $(function () {
+      $( '#table' ).searchable({
+          striped: true,
+          oddRow: { 'background-color': '#f5f5f5' },
+          evenRow: { 'background-color': '#fff' },
+          searchType: 'fuzzy'
+      });
+      
+      $( '#searchable-container' ).searchable({
+          searchField: '#container-search',
+          selector: '.row',
+          childSelector: '.col-xs-4',
+          show: function( elem ) {
+              elem.slideDown(100);
+          },
+          hide: function( elem ) {
+              elem.slideUp( 100 );
+          }
+      })
+  });
+  </script>
+@endsection()
