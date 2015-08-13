@@ -19,7 +19,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Asset <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class=""><a href="{{ action('DashController@AddAsset') }}">Add Asset</a></li>
-            <li><a href="{{ action('DashController@UpdateAsset') }}">Update Asset</a></li>
+            <li><a href="{{ action('DashController@SearchAsset') }}">Search</a></li>
           </ul>
         </li>
         <li class="Logout">
@@ -37,7 +37,7 @@
 @section('contents')
   <div class="dash-jumbo">
     <div class="jumbotron" align="center">
-      <h2>Search result is posted blow</h2>
+      <h2>Search and update assets</h2>
       <p>To help yourself click learn more to know more.</p>
       <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#learn">Learn More</a>
     </div>
