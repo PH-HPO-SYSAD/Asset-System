@@ -199,49 +199,49 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="info">
+    <tr class="success">
       <td>1</td>
       <td>Mouse Genius</td>
       <td>MOUSE-GENIUS-0052</td>
       <td>Working</td>
       <td>Under Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="success">
       <td>2</td>
       <td>AOC</td>
       <td>COMP-AOC-0013</td>
       <td>Working</td>
       <td>Under Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="success">
       <td>3</td>
       <td>Genius Keyboard</td>
       <td>KYBRD-GENIUS-0025</td>
       <td>Working</td>
       <td>No Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="success">
       <td>4</td>
       <td>Keyboard Genius</td>
       <td>MOUSE-GENIUS-0153</td>
       <td>Working</td>
       <td>Under Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="success">
       <td>5</td>
       <td>Samsung</td>
       <td>COMP-SAMSUNG-0055</td>
       <td>Working</td>
       <td>Under Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="success">
       <td>6</td>
       <td>View Sonic</td>
       <td>COMP-VIEWSONIC-0442</td>
       <td>Working</td>
       <td>No Warranty</td>
     </tr>
-    <tr class="info">
+    <tr class="success">
       <td>7</td>
       <td>Acer</td>
       <td>COMP-ACER-0022</td>

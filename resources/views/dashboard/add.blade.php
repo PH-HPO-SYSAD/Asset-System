@@ -13,7 +13,7 @@
     </div>
   
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li class=""><a href="{{ action('DashController@dashboard') }}">Home <span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Asset <span class="caret"></span></a>
@@ -51,6 +51,24 @@
       <label for="inputEmail" class="col-lg-2 control-label">Brand</label>
       <div class="col-lg-10">
         <input type="text" class="form-control" id="inputEmail" placeholder="Brand">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Color</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Asset Color">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Control Number</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Control Number">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Serial Number</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Serial Number">
       </div>
     </div>
     <div class="form-group">
@@ -115,6 +133,12 @@
           <option>2nd Use</option>
         </select>
         <br>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Assigned Location</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Deployment location">
       </div>
     </div>
     <div class="form-group">
