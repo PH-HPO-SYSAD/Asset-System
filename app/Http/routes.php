@@ -1,11 +1,4 @@
 <?php
-// Route Get methods
-// Route::get('/', 'DashController@index');
-// Route::get('pincode', 'DashController@pincode');
-// Route::get('register', 'DashController@register');
-// Route::get('index', 'DashController@dashboard');
-// Route::get('add', 'DashController@AddAsset');
-// Route::get('search', 'DashController@SearchAsset');
 
 Route::group(['middleware' => 'guest'], function(){
 
@@ -20,9 +13,19 @@ Route::group(['middleware' => 'guest'], function(){
 });
 
 Route::group(['middleware' => 'auth'], function(){
-	
+
 	Route::get('/auth/logout', 'Auth\AuthController@getLogout');
-	
+
 	Route::get('/', 'DashboardController@index');
+
+	Route::get('/asset', 'AssetController@index');
+
+	Route::group(['middleware' => 'admin'], function(){
+
+		Route::get('/asset/create', 'AssetController@create');
+
+		Route::post('/asset', 'AssetController@store');
+
+	});
 	
 });
