@@ -20,11 +20,17 @@ Route::group(['middleware' => 'auth'], function(){
 
 	Route::get('/asset', 'AssetController@index');
 
+	Route::get('/asset/{asset}', 'AssetController@show');
+
 	Route::group(['middleware' => 'admin'], function(){
 
 		Route::get('/asset/create', 'AssetController@create');
 
 		Route::post('/asset', 'AssetController@store');
+
+		Route::get('/asset/{asset}/edit', 'AssetController@edit');
+
+		Route::put('/asset/{asset}', 'AssetController@update');
 
 	});
 	

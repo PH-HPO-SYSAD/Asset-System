@@ -58,6 +58,7 @@ class AssetController extends Controller
         ]);
         //if asset is successfully saved to the database
         if($asset){
+            flash()->success($asset->model.' successfully added.');
             return redirect()->to('/');
         }
     }

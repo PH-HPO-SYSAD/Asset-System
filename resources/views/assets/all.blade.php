@@ -36,8 +36,14 @@
 						<td>{{ $asset->model }}</td> 
 						<td>{{ $asset->status }}</td> 
 						<td>
-							<button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i> View</button>
-							<button class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-pencil"></i> Update</button>
+							<a href="/asset/{{ $asset->asset_id }}">
+								<button class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-search"></i> View</button>
+							</a>
+							@if(auth()->user()->isAdmin())
+							<a href="/asset/{{ $asset->asset_id }}">
+								<button class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-pencil"></i> Update</button>
+			       			</a>
+			       			@endif
 			       		</td>
 			        </tr>
 			        @endforeach
